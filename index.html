@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#10263a" />
+    <meta name="description" content="Ridgeline, a short touch-first modern combat exercise." />
+    <title>Ridgeline</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <script type="module" crossorigin src="./assets/index-DYSXu4YB.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-hfO2yZxs.css">
+  </head>
+  <body>
+    <div id="app" data-state="loading">
+      <canvas id="view"></canvas>
+      <div id="hurt"></div>
+      <div id="hud">
+        <div id="top">
+          <div id="hp-block">
+            <div id="hp-label">HP</div>
+            <div id="hp-track"><div id="hp-fill"></div></div>
+            <div id="hp-num">100</div>
+          </div>
+          <div id="obj-block">
+            <div id="mission-name">Sector</div>
+            <div id="objective">Hold</div>
+            <div id="compass"><span id="arrow">▲</span> <span id="compass-label">Beacon</span> <span id="compass-dist"></span></div>
+          </div>
+          <div id="top-right">
+            <button id="mute" type="button" aria-label="Mute sound">SND</button>
+            <div id="lives" aria-label="Lives"></div>
+            <button id="pause" type="button" aria-label="Pause">II</button>
+          </div>
+        </div>
+        <div id="crosshair" aria-hidden="true"></div>
+        <div id="toast"></div>
+        <div id="hint"></div>
+      </div>
+      <div id="touch">
+        <div id="stick" aria-label="Move stick"><div id="knob"></div></div>
+        <div id="weapons"></div>
+        <button id="reload" type="button">RELOAD</button>
+        <button id="fire" type="button">FIRE</button>
+      </div>
+      <div id="fps"></div>
+      <div id="overlay" class="show">
+        <section class="card" id="boot">
+          <p class="eyebrow">Loading models</p>
+          <h1>RIDGELINE</h1>
+          <div class="load-track"><div id="bar-fill"></div></div>
+          <p id="boot-msg">Reading character rigs…</p>
+        </section>
+      </div>
+      <div id="rotate-lock">
+        <div>
+          <p class="eyebrow">Landscape</p>
+          <h2>Turn the phone sideways</h2>
+          <p>The stick, look area, and fire button need the wide layout.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
